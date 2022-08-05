@@ -1,11 +1,14 @@
 package ru.Bogun.spring_project.models;
 
 public class Person {
-    private String FNS;
+
+    private int id;
+    private String fullName;
     private int age;
 
-    public Person(String FNS, int age) {
-        this.FNS = FNS;
+    public Person(int id, String fullName, int age) {
+        this.id = id;
+        this.fullName = fullName;
         this.age = age;
     }
 
@@ -13,12 +16,20 @@ public class Person {
 
     }
 
-    public String getFNS() {
-        return FNS;
+    public int getId() {
+        return id;
     }
 
-    public void setFNS(String FNS) {
-        this.FNS = FNS;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public int getAge() {

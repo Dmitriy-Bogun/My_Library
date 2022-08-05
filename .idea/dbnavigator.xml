@@ -29,7 +29,15 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="0e31ba4f-c8f0-424d-a129-3ea94cc123d5">
-      <console name="LibraryDB" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from Book]]></console>
+      <console name="LibraryDB" type="STANDARD" schema="information_schema" session="Main"><![CDATA[insert into person (
+    "id",
+    "age",
+    full_name)
+values (
+    1,
+    23,
+    'First')
+;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -550,6 +558,11 @@
     </general-settings>
   </component>
   <component name="DBNavigator.Project.StatementExecutionManager">
-    <execution-variables />
+    <execution-variables>
+      <file file-url="db://0e31ba4f-c8f0-424d-a129-3ea94cc123d5/consoles/LibraryDB">
+        <variable name=":23" dataType="LITERAL" values="" />
+        <variable name=":1" dataType="LITERAL" values="" />
+      </file>
+    </execution-variables>
   </component>
 </project>
