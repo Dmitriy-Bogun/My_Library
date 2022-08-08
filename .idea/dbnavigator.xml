@@ -29,15 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="0e31ba4f-c8f0-424d-a129-3ea94cc123d5">
-      <console name="LibraryDB" type="STANDARD" schema="information_schema" session="Main"><![CDATA[insert into person (
-    "id",
-    "age",
-    full_name)
-values (
-    1,
-    23,
-    'First')
-;]]></console>
+      <console name="LibraryDB" type="STANDARD" schema="public" session="Main"><![CDATA[select * from book]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

@@ -1,13 +1,21 @@
 package ru.Bogun.spring_project.models;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
+
 public class Book {
     private int id;
+    @NotEmpty(message = "Название не должно быть пустым")
+    @Size(min = 2,max = 100, message = "Название должно быть от 2 до 100 символов " )
     private String title;
+    @NotEmpty(message = "Имя автора не может быть пустым")
+    @Size(min = 2,max = 100,message = "Имя автора должно содержать от 2 до 100 символов")
     private String author;
+    @Min(value = 1500, message = "Год должен быть больше, чем 1500")
     private int year;
 
-    public Book(int id, String title, String author, int year) {
-        this.id = id;
+    public Book( String title, String author, int year) {
         this.title = title;
         this.author = author;
         this.year = year;
@@ -44,7 +52,7 @@ public class Book {
         return year;
     }
 
-    public void setYear(int age) {
+    public void setYear(int year) {
         this.year = year;
     }
 }
